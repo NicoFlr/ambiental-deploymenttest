@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build --aot -prod",
+    "heroku-postbuild": "ng build --prod",
     "copy-scss": "cp -r projects/angular-bootstrap-md/src/lib/assets dist/angular-bootstrap-md/assets",
     "copy-files": "cp projects/angular-bootstrap-md/src/lib/changelog projects/angular-bootstrap-md/src/lib/License.pdf README.md dist/angular-bootstrap-md",
     "pack-archive": "cd dist/angular-bootstrap-md && npm pack . && cp angular-bootstrap-md-8.*.tgz ../..",
