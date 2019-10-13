@@ -1,0 +1,56 @@
+<div  class="jumbotron" id="jum">
+  <div id="cont">
+      <img src="../../assets/img/cima-logo.jpg" class="img-fluid" id ="imgHead" align="right"> <h1 class="text-white">Sistema Ambiental</h1>
+      <p class="text-white lead">Cuidando tu ciudad!</p>
+  </div>                 
+</div>
+<nav  aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a class="black-text" (click)="redirecTo('/municipality')">Home</a></li>
+          <li class="breadcrumb-item"><a class="black-text" href="#">Municipio</a></li>
+          <li class="breadcrumb-item active">Distrito</li>
+        </ol>
+</nav> 
+<div class="container">
+    <div>
+     <h1 class="text-center text-success"><strong>{{districtData.name}}</strong></h1>
+     <hr class="divider my-4">
+    </div>
+</div>
+
+<div class="container">
+        <blockquote class="blockquote bq-warning">
+                <p class="bq-title">Informacion</p>
+                <p>{{districtData.information}}
+                </p>
+              </blockquote>
+</div>
+
+
+  <div class="container">
+    <div class="row">
+      <div *ngFor="let item of subDistrictList">
+      <div class="col">
+        <div class="card mb-3 clearfix" style="max-width: 500px;">
+            <div class="row no-gutters">
+              <div class="col-md-6">
+                <img id="imgCard" src="../../assets/img/veg.jpg" class="card-img" alt="...">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title"><strong>{{item.name}}</strong></h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Sub Distrito 3 </small></p>
+                  <button type="button" (click)="viewSubDistrict(item.id)" class="btn btn-success btn-sm float-right">Ver Mas</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+</div>
+</div>
+
+    
+    
+<app-footer></app-footer>

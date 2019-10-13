@@ -1,0 +1,71 @@
+.breadcrumb{
+    background-color: white;
+  }
+  hr.divider {
+    max-width: 7.25rem;
+    border-width: .3rem;
+    border-color: #e0f2f1;
+  }
+
+  #imgCard{
+    width: 100%;
+    height: 100%;
+}
+
+  h1 .card{
+    padding: 0 20px 20px;
+
+    font-weight: 700;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  }
+
+  .breadcrumb{
+    background-color: #ffffff; 
+  }
+
+  #pad{
+    padding: 30px;
+  }
+
+  @media (min-width: 576px) {
+    .card-columns {
+        column-count: 1;
+    }
+}
+
+@media (min-width: 768px) {
+    .card-columns {
+        column-count: 2;
+    }
+}
+
+@media (min-width: 992px) {
+    .card-columns {
+        column-count: 3;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-columns {
+        column-count: 3;
+    }
+}
+
+#cont{
+  background-color: rgba(0,0,0,.5);
+}
+#jum{
+  background-image: url('../../../assets/img/city.jpg');
+  background-size: cover;
+  margin-bottom: 0px;
+  background-size:100% 100%;
+}
+
+
+#imgHead{
+  width: 200px;
+  height: 85px;
+}
+
+
+  

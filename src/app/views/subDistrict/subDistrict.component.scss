@@ -1,0 +1,40 @@
+.breadcrumb{
+    background-color: white;
+}
+
+hr.divider {
+    border-width: .3rem;
+    border-color: #e0f2f1;
+  }
+  .btn-circle {
+    width: 50px;
+    height: 50px;
+    padding: 14px 5px;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.22;
+    margin-right: 10%;
+}
+
+#imgCard{
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+}
+
+#cont{
+    background-color: rgba(0,0,0,.5);
+}
+#jum{
+    background-image: url('../../../assets/img/city.jpg');
+    background-size: cover;
+    margin-bottom: 0px;
+    background-size:100% 100%;
+}
+
+
+#imgHead{
+    width: 200px;
+    height: 85px;
+}

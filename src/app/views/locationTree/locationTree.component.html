@@ -1,0 +1,94 @@
+<div  class="jumbotron" id="jum">
+  <div id="cont">
+      <img src="../../assets/img/cima-logo.jpg" class="img-fluid" id ="imgHead" align="right"> <h1 class="text-white">Sistema Ambiental</h1>
+      <p class="text-white lead">Cuidando tu ciudad!</p>
+  </div>                 
+</div>
+<nav  aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a class="black-text" href="#">Home</a></li>
+      <li class="breadcrumb-item"><a class="black-text" (click)="redirecTo('/municipality')">Municipio</a></li>
+      <li class="breadcrumb-item"><a class="black-text" href="#">Distrito</a></li>
+      <li class="breadcrumb-item"><a class="black-text" href="#">Sub Distrito</a></li>
+      <li class="breadcrumb-item"><a class="black-text" href="#">NomClasif</a></li>
+      <li class="breadcrumb-item"><a class="black-text" href="#">SubClasif</a></li>
+      <li class="breadcrumb-item"><a class="black-text" href="#">NombreLocTree</a></li>
+      <li class="breadcrumb-item active">Div</li>
+    </ol>
+  </nav>
+
+  <div class="container">
+        <div>
+                <h1 class="text-center text-success"><strong> {{locationTreeData.name}} </strong></h1>
+                <h3 class="text-center text-success">Vegetacion Existente</h3>
+                <hr class="divider my-4">
+               </div>
+</div>
+
+<div class="container">
+        <blockquote class="blockquote bq-warning">
+                <p class="bq-title">Informacion</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quibusdam dignissimos itaque harum illo!
+                  Quidem, corporis at quae tempore nisi impedit cupiditate perferendis nesciunt, ex dolores doloremque!
+                  Sit, rem, in?
+                </p>
+              </blockquote>
+</div>
+
+<div class="container">
+    <div>
+        <!-- Section: Blog v.1 -->
+<section class="my-5">
+
+        <!-- Section heading -->
+        <h5 class="h1-responsive font-weight-bold text-left text-success my-5">Arboles Urbanos</h5>
+       
+        <hr class="my-5">
+    
+      <!-- Grid row -->
+        <div *ngFor="let item of treeList">
+          <div class="row">
+      
+            <!-- Grid column -->
+            <div class="col-lg-3">
+        
+              <!-- Featured image -->
+              <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4">
+                <img class="img-fluid" src="../../assets/img/arbolL.jpg" alt="Sample image">
+                <a>
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+        
+            </div>
+            <!-- Grid column -->
+        
+            <!-- Grid column -->
+            <div class="col-lg-7">
+        
+              <!-- Category -->
+              <a href="#!" class="green-text">
+                      <h6 class="font-weight-bold mb-3"><i class="fas fa-city"></i>Sub Distrito</h6>
+              </a>
+              <!-- Post title -->
+              <h3 class="font-weight-bold mb-3"><strong> {{item.commonName}} </strong></h3>
+              <!-- Excerpt -->
+              <h4> {{item.scientificName}} </h4>
+              <h5> {{item.codeTree}} </h5>
+              <!-- Read more button -->
+              <br>
+              <a class="btn btn-success btn-md text-white">Ver Mas</a>
+        
+            </div>
+            <!-- Grid column -->
+        
+          </div>
+        </div>
+        
+      
+      </section>
+      <!-- Section: Blog v.1 -->
+    </div>
+</div>
+
+<app-footer></app-footer>

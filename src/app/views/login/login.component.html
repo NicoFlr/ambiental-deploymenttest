@@ -1,0 +1,90 @@
+
+
+
+<!--Main Navigation-->
+<header>
+  <div class="view intro-2">
+    <div class="full-bg-img">
+      <div class="mask d-flex flex-center align-items-left">
+        <div class="container">
+          <div class="row">
+              <div class="col-md-6 text-left white-text wow fadeInUp">
+                  <h2>This Navbar is fixed and transparent</h2>
+                <br>
+                <h5>It will always stay visible on the top, even when you scroll down</h5>
+                <p>Navbar's background will switch from transparent to solid color while scrolling down</p>
+                <br>
+                <p>Full page intro with background image will be always displayed in full screen mode, regardless of
+                  device </p>
+                </div>
+                <div class="col-md-6">
+                  <div class="card ">
+                    <div class="card-body">
+                      <h3 class="text-center text-dark "><p>Ingreso</p></h3>
+                    </div>
+                    <form action="">
+                      <div class="container">
+                        <div class="md-form">
+                          <i class="fas fa-user prefix"></i>
+                          <input type="text" id="inputIconEx2" class="form-control" name="username" [(ngModel)]="username">
+                          <label class="active" for="inputIconEx2 ">Nombre de Usuario</label>
+                        </div>
+                        <div class="md-form">
+                          <i class="fas fa-lock prefix"></i>
+                          <input type="password" id="inputValidationEx2" class="form-control validate" name="password" [(ngModel)]="password">
+                          <label for="inputValidationEx2" class="active" data-error="wrong" data-success="right">Type your password</label>
+                        </div>
+                         </div>
+                         <div class="d-flex justify-content-around">
+                            <div>
+                                <!-- Remember me -->
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+                                    <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
+                                </div>
+                            </div>
+                            <div>
+                                <!-- Forgot password -->
+                                <a href="">Forgot password?</a>
+                            </div>
+                        </div>
+                         <div class="row justify-content-center align-self-center">
+                            <div class="col-md-8 text-center">
+                                <button class="btn btn-info btn-block my-4" (click)="checkLogin()" type="submit">Sign in</button>
+                             </div>
+                         </div>
+                        <div class="d-flex justify-content-around text-center">
+                            <div class="row justify-content-center align-self-center">
+                                <p class="col-md-12">Not a member?
+                                    <a href="">Register</a>
+                                </p>
+                                <br>
+                                <br>
+                                <!-- Social login -->
+                                <p class="col-md-12">or sign in with:</p>
+                                <br>
+                                <br>
+                                <div class="col-md-12">
+                                    <a href="#" class="mx-2" role="button"><i class="fab fa-facebook-f light-blue-text"></i></a>
+                                    <a href="#" class="mx-2" role="button"><i class="fab fa-twitter light-blue-text"></i></a>
+                                    <a href="#" class="mx-2" role="button"><i class="fab fa-linkedin-in light-blue-text"></i></a>
+                                    <a href="#" class="mx-2" role="button"><i class="fab fa-github light-blue-text"></i></a>
+                                </div>
+                             </div>
+                             <br>
+                        </div>
+                         <br>
+                         <br>
+                    </form>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+
+<app-footer></app-footer>
+<!--Main Navigation-->

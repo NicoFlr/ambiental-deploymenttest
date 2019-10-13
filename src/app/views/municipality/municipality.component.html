@@ -1,0 +1,58 @@
+<div  class="jumbotron" id="jum">
+  <div id="cont">
+      <img src="../../assets/img/cima-logo.jpg" class="img-fluid" id ="imgHead" align="right"> <h1 class="text-white">Sistema Ambiental</h1>
+      <p class="text-white lead">Cuidando tu ciudad!</p>
+  </div>                 
+</div>
+<nav  aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a class="black-text" href="#">Home</a></li>
+          <li class="breadcrumb-item active">Municipio</li>
+        </ol>
+      </nav>
+
+      <div class="container">
+            <div>
+                <h1 class="text-center text-success"><strong>Municipio de Cochabamba</strong></h1>
+                <hr class="divider my-4">
+            </div>
+         
+            <br>
+        </div>
+        <br>
+
+    <div class="container">
+            <blockquote class="blockquote bq-warning">
+                    <p class="bq-title">Informacion</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quibusdam dignissimos itaque harum illo!
+                      Quidem, corporis at quae tempore nisi impedit cupiditate perferendis nesciunt, ex dolores doloremque!
+                      Sit, rem, in?
+                    </p>
+                  </blockquote>
+    </div>
+
+
+   
+      <div class="container ">
+        <div class="row">
+      <div *ngFor="let item of districtList">
+        <div class="col">
+            <div class="card clearfix" id="cardObj">
+                <img id="imgCard" class="card-img-top img-responsive" src="../../assets/img/cristo.jpg" alt="Card image">
+                <div class="card-img-overlay text-center" id="imgOver" >
+                <h5 class="text-success" id="padAL"><i class="fas fa-tree"></i>Municipio de Cochabamba</h5>
+                  <h2 class="card-title text-center colTit" ><strong>{{item.name}}</strong> </h2>
+                  <p class="card-text text-center text-white colTxt">{{item.information}}</p>
+                  <div class="button text-center ">
+                        <button (click)="viewDistrict(item.id)" class="btn btn-success text-white"><i class="fas fa-eye pr-2 " aria-hidden="true"></i>Ver Mas</button>
+                  </div>
+                </div>
+            </div>   
+        </div>
+        </div>
+        </div>
+    </div>
+   <br>
+
+
+<app-footer></app-footer>

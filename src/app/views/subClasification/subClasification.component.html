@@ -1,0 +1,66 @@
+<div  class="jumbotron" id="jum">
+  <div id="cont">
+      <img src="../../assets/img/cima-logo.jpg" class="img-fluid" id ="imgHead" align="right"> <h1 class="text-white">Sistema Ambiental</h1>
+      <p class="text-white lead">Cuidando tu ciudad!</p>
+  </div>                 
+</div>
+
+<nav  aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a class="black-text" href="#">Home</a></li>
+          <li class="breadcrumb-item"><a class="black-text" (click)="redirecTo('/municipality')">Municipio</a></li>
+          <li class="breadcrumb-item"><a class="black-text" href="#">Distrito</a></li>
+          <li class="breadcrumb-item"><a class="black-text" href="#">Sub Distrito</a></li>
+          <li class="breadcrumb-item"><a class="black-text" href="#">NomClasif</a></li>
+          <li class="breadcrumb-item active">SubClasif</li>
+        </ol>
+      </nav> 
+
+      <br>
+      <div class="container">
+        <div>
+         <h1 class="text-center text-success"><strong> {{subClassificationData.name}} </strong></h1>
+         <hr class="divider my-4">
+        </div>
+    </div>
+    
+    <div class="container">
+            <blockquote class="blockquote bq-warning">
+                    <p class="bq-title">Informacion</p>
+                    <p>{{subClassificationData.information}}
+                    </p>
+                  </blockquote>
+    </div>
+
+    <div *ngFor="let item of locationTreeList">
+      <div class="container">
+        <div class="card-columns">
+            <!-- Card Dark -->
+<div class="card">
+
+        <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top" src="../../assets/img/Parque-1.jpeg" alt="Card image cap">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+      
+        <!-- Card content -->
+        <div class="card-body  white-text rounded-bottom">
+      
+          <!-- Title -->
+          <h4 class="card-title">{{item.name}}</h4>
+          <hr class="hr-light">
+          <!-- Text -->
+          <p class="card-text white-text mb-4">{{item.information}}</p>
+          <!-- Link -->
+          <button class="btn btn-outline-default waves-effect" (click)="viewDivision(item.id)" ><h5>Ver Mas<i class="fas fa-angle-double-right"></i></h5></button>
+      
+        </div>
+      
+      </div>
+        </div>
+    </div>
+    </div>
+<app-footer></app-footer>

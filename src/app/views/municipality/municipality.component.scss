@@ -1,0 +1,85 @@
+.breadcrumb{
+    background-color: white;
+  }
+
+  #imgCard {
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+    width: 100%;
+    height: 100%;
+  }
+
+  #padAL{
+      padding-top: 10%;
+  }
+
+  #pad{
+    padding: 30px;
+  }
+
+  #cardObj{
+    max-width: 350px;
+    height: 350px;
+  }
+
+  #imgOver{
+    background-color: rgba(0,0,0,.5);
+  }
+  .colTit{
+      color: white;
+    padding-top: 8%;
+  }
+
+  .colTxt{
+    
+    padding-top: 5%;
+  }
+
+  @media (min-width: 576px) {
+    .card-columns {
+        column-count: 1;
+    }
+}
+
+@media (min-width: 768px) {
+    .card-columns {
+        column-count: 2;
+    }
+}
+
+@media (min-width: 992px) {
+    .card-columns {
+        column-count: 3;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-columns {
+        column-count: 3;
+    }
+}
+
+.button{
+    padding-top: 15%;
+  }
+
+  hr.divider {
+    max-width: 15.25rem;
+    border-width: .3rem;
+    border-color: #e0f2f1;
+  }
+
+  #cont{
+    background-color: rgba(0,0,0,.5);
+}
+#jum{
+    background-image: url('../../../assets/img/city.jpg');
+    background-size: cover;
+    margin-bottom: 0px;
+    background-size:100% 100%;
+}
+
+
+#imgHead{
+  width: 200px;
+  height: 85px;
+}

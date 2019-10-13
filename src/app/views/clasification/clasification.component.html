@@ -1,0 +1,65 @@
+
+  <div  class="jumbotron" id="jum">
+    <div id="cont">
+        <img src="../../assets/img/cima-logo.jpg" class="img-fluid" id ="imgHead" align="right"> <h1 class="text-white">Sistema Ambiental</h1>
+        <p class="text-white lead">Cuidando tu ciudad!</p>
+    </div>                 
+</div>
+<nav  aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a class="black-text" href="#">Home</a></li>
+      <li class="breadcrumb-item"><a class="black-text" (click)="redirecTo('/municipality')">Municipio</a></li>
+      <li class="breadcrumb-item"><a class="black-text" href="#">Distrito</a></li>
+      <li class="breadcrumb-item"><a class="black-text" href="#">Sub Distrito</a></li>
+      <li class="breadcrumb-item active">NomClasif</li>
+    </ol>
+  </nav> 
+  <br>
+  <div class="container">
+    <div>
+     <h1 class="text-center text-success"><strong> {{classificationData.name}} </strong></h1>
+     <hr class="divider my-4">
+    </div>
+</div>
+
+<div class="container">
+        <blockquote class="blockquote bq-warning">
+                <p class="bq-title">Informacion</p>
+                <p>{{classificationData.information}}
+                </p>
+              </blockquote>
+</div>
+
+
+  <div class="container">
+    <div class="row">
+        <div *ngFor="let item of subClassificationList">
+      <div class="col-md-4">
+            <div class="card card-cascade wider">
+            <div class="view view-cascade overlay">
+                    <img  class="card-img-top" src="../../assets/img/infantil.jpg" alt="Card image cap">
+                    <a href="#!">
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                
+                  <!-- Card content -->
+                  <div class="card-body card-body-cascade text-center">
+                
+                    <!-- Title -->
+                    <h4 class="card-title"><strong>{{item.name}}</strong></h4>
+
+                    <!-- Text -->
+                    <p class="card-text">{{item.information}} </p>
+                
+                    
+                    <button class="btn btn-success btn-md text-white" (click)="viewSubClassification(item.id)" >Ver Mas</button>
+                  </div>
+                </div>
+              </div>
+    </div>
+</div>
+</div>
+
+
+<app-footer></app-footer>

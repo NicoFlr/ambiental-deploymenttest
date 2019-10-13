@@ -1,0 +1,64 @@
+<div  class="jumbotron" id="jum">
+  <div id="cont">
+      <img src="../../assets/img/cima-logo.jpg" class="img-fluid" id ="imgHead" align="right"> <h1 class="text-white">Sistema Ambiental</h1>
+      <p class="text-white lead">Cuidando tu ciudad!</p>
+  </div>                 
+</div>
+<nav  aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a class="black-text" href="#">Home</a></li>
+          <li class="breadcrumb-item"><a class="black-text" (click)="redirecTo('/municipality')">Municipio</a></li>
+          <li class="breadcrumb-item"><a class="black-text" href="#">{{subDistrictData.district.name}}</a></li>
+          <li class="breadcrumb-item active">Sub Distrito</li>
+        </ol>
+      </nav> 
+<div class="container">
+        <div>
+         <h1 class="text-center text-success"><strong> {{subDistrictData.name}}</strong></h1>
+         <h3 class="text-center text-success">{{subDistrictData.cod}}</h3>
+         <hr class="divider my-4">
+        </div>
+</div>
+    
+    <div class="container">
+            <blockquote class="blockquote bq-warning">
+                    <p class="bq-title">Informacion</p>
+                    <p>{{subDistrictData.information}}
+                    </p>
+                  </blockquote>
+    </div>
+
+    
+      <div class="container">
+        <div class="row">
+          <div *ngFor="let item of classificationList">
+          <div class="col-md-4">
+           
+                <div class="card ">
+                        <!-- Card image -->
+                        <div class="view overlay clearfix">
+                          <img class="card-img-top" src="../../assets/img/vege.jpg" alt="Card image cap" id="imgCard">
+                          <a>
+                            <div class="mask rgba-white-slight"></div>
+                          </a>
+                        </div>
+                        <!-- Button -->                        
+                        <button (click)="viewClassification(item.id)" type="button" class="btn mdb-color lighten-3 btn-circle float-right"><i class="fas fa-chevron-right pl-1 text-white"></i></button>
+    
+                        <!-- Card content -->
+                        <div class="card-body">
+                      
+                          <!-- Title -->
+                          <h4 class="card-title">{{item.name}}</h4>
+                          <hr>
+                          <!-- Text -->
+                          <p class="card-text">{{item.information}}</p>
+                      
+                        </div>        
+                 </div>
+                </div>
+         </div>
+    </div>
+  </div>
+<br>
+<app-footer></app-footer>

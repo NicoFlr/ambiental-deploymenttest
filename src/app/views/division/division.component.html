@@ -1,0 +1,78 @@
+<div  class="jumbotron" id="jum">
+  <div id="cont">
+      <img src="../../assets/img/cima-logo.jpg" class="img-fluid" id ="imgHead" align="right"> <h1 class="text-white">Sistema Ambiental</h1>
+      <p class="text-white lead">Cuidando tu ciudad!</p>
+  </div>                 
+</div>
+
+<nav  aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a class="black-text" href="#">Home</a></li>
+          <li class="breadcrumb-item"><a class="black-text" (click)="redirecTo('/municipality')">Municipio</a></li>
+          <li class="breadcrumb-item"><a class="black-text" href="#">Distrito</a></li>
+          <li class="breadcrumb-item"><a class="black-text" href="#">Sub Distrito</a></li>
+          <li class="breadcrumb-item"><a class="black-text" href="#">NomClasif</a></li>
+          <li class="breadcrumb-item"><a class="black-text" href="#">SubClasif</a></li>
+          <li class="breadcrumb-item active">NombreLocTree</li>
+        </ol>
+      </nav> 
+
+      <div class="container">
+            <div>
+             <h1 class="text-center text-success"><strong> {{locationTreeData.name}} </strong></h1>
+             <hr class="divider my-4">
+            </div>
+        </div>
+        
+        <div class="container">
+                <blockquote class="blockquote bq-warning">
+                        <p class="bq-title">Informacion</p>
+                        <p> {{locationTreeData.information}}
+                        </p>
+                      </blockquote>
+        </div>
+
+<div class="container">
+        <div class="blog-card">
+                <div class="meta">
+                  <div class="photo" style="background-image: url(http://blog.capitalizarme.com/chile/wp-content/uploads/sites/4/2017/06/9_6-min.png)"></div>
+                  <p class="details"></p>
+                </div>
+                <div class="description">
+                  <h1>Vegetacion Existente</h1>
+                  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
+                  <p class="read-more">
+                    <button class="btn btn-success btn-md text-white" (click)="viewGreenAreas()">Ver Mas</button>
+                  </p>
+                </div>
+              </div>
+              <div class="blog-card alt">
+                <div class="meta">
+                  <div class="photo" style="background-image: url(http://blog.capitalizarme.com/chile/wp-content/uploads/sites/4/2017/06/9_6-min.png)"></div>
+                  <p class="details"></p>
+                </div>
+                <div class="description">
+                  <h1>Reposicion de Areas Verdes</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
+                  <p class="read-more">
+                      <a class="btn btn-success btn-md text-white">Ver Mas</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="blog-card">
+                    <div class="meta">
+                      <div class="photo" style="background-image: url(http://blog.capitalizarme.com/chile/wp-content/uploads/sites/4/2017/06/9_6-min.png)"></div>
+                      <p class="details"></p>
+                    </div>
+                    <div class="description">
+                      <h1>Podas y Tratamietos Silviculturales</h1>
+                      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
+                      <p class="read-more">
+                          <a class="btn btn-success btn-md text-white">Ver Mas</a>
+                      </p>
+                    </div>
+                  </div>
+</div>
+
+<app-footer></app-footer>
