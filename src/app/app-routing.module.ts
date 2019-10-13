@@ -14,7 +14,7 @@ import { CreateUserComponent } from './views/createUser/createUser.component';
 import { AuthAccountGuard } from './guards/loggedIn.guard'
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full', canActivate: [] },
+  { path: '', redirectTo: '/', pathMatch: 'full', canActivate: [] },
   { path: 'home', component: HomeComponent, canActivate: [] },
   { path: 'municipality', component: MunicipalityComponent, canActivate: [AuthAccountGuard] },
   { path: 'district/:id', component: DistrictComponent, canActivate: [AuthAccountGuard] },
